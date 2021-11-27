@@ -77,7 +77,7 @@ export default {
   },
   methods: {
     createDeck() {
-      const images = ['roma.jpg', 'parigi.jpg', 'newyork.jpg', 'milano.jpg', 'firenze.jpg', 'pisa.jpg'];
+      const images = ['roma.webp', 'parigi.webp', 'newyork.webp', 'milano.webp', 'firenze.webp', 'pisa.webp'];
       this.deck = [...images, ...images].map((el, index) => ({
         id: index,
         value: el,
