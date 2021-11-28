@@ -90,6 +90,8 @@ export default {
     startGame() {
       this.$confetti.stop();
       this.isModalVisible = false;
+      this.cardSelected = [];
+      this.moves = 0;
 
       for (let i = 0; i < this.deck.length; i++) {
         this.deck[i].flipped = false;
@@ -97,7 +99,6 @@ export default {
         this.deck[i].game++;
       }
       this.shuffleDeck(this.deck);
-      this.moves = 0;
     },
 
     shuffleDeck() {
